@@ -1,0 +1,68 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("back.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #ff4646;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: 8rem;
+}
+.btn {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+#yesBtn {
+    background-color: #ff4646;
+    color: white;
+}
+#yesBtn:hover {
+    background-color: #ff6b6b;
+    transform: scale(1.1);
+}
+#noBtn {
+    background-color: #808080;
+    color: white;
+}
+.heart {
+    position: fixed;
+    font-size: 1.5rem;
+    animation: float 3s ease-in-out infinite;
+    opacity: 0;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
